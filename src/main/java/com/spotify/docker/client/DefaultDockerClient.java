@@ -85,7 +85,7 @@ public class DefaultDockerClient implements DockerClient, Closeable {
 
     private static final String UNIX_SCHEME = "unix";
 
-    private static final String VERSION = "v1.12";
+    private static final String VERSION = "v1.17";
     private static final Logger log = LoggerFactory.getLogger(DefaultDockerClient.class);
 
     public static final long NO_TIMEOUT = 0;
@@ -1107,11 +1107,7 @@ public class DefaultDockerClient implements DockerClient, Closeable {
     }
 
     private static String defaultEndpoint() {
-//    if (getProperty("os.name").equalsIgnoreCase("linux")) {
-//      return DEFAULT_UNIX_ENDPOINT;
-//    } else {
         return DEFAULT_HOST + ":" + DEFAULT_PORT;
-//    }
     }
 
     public static class Builder {

@@ -63,11 +63,6 @@ public class Main {
             System.out.println("OUT: " + execOutput);
 
         } catch (Exception e) {
-//            System.out.println(e.getMessage());
-//            if(e.getCause() != null)
-//            {
-//                System.out.println(e.getCause().getMessage());
-//            }
             e.printStackTrace();
         } finally {
             try {
