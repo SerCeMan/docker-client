@@ -19,7 +19,7 @@ public class Main {
         try {
             docker = DefaultDockerClient.fromEnv().build();
 
-            // Pull image
+            // Pull imagec
             docker.pull("busybox");
 
             // Create container with exposed ports
